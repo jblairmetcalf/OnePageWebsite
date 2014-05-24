@@ -39,12 +39,15 @@ $(function() {
 	$(window).scroll(scroll);
 	$(window).resize(resize);
 	updateDirections();
-	console.log("updateDirections();");
 });
 function preloadFiles() {
-	$(files).each(function(i, e) {
-		preloadFile(e);
-	});
+	if (files.length) {
+		$(files).each(function(i, e) {
+			preloadFile(e);
+		});
+	} else {
+		initiatePage();
+	}
 }
 function preloadFile(url) {
 	jQuery.ajax({
@@ -57,14 +60,12 @@ function preloadFile(url) {
 	});
 }
 function fileLoaded() {
-	console.log("function fileLoaded() {");
 	loadedFiles++;
 	if (loadedFiles == files.length) {
 		initiatePage();
 	}
 }
 function initiatePage() {
-	console.log("function initiatePage() {");
 	$("body").show();
 	$("body, html").delay(delayLoad).animate({"opacity": 1}, durationPage, "linear", function() {
 		var current = $(".page#"+pageId);
