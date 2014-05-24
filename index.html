@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+<title>J Blair Metcalf: Seattle Developer &amp; Designer</title>
+<meta property="og:site_name" content="J Blair Metcalf: Seattle iOS Developer" />
+<meta property="og:title" content="J Blair Metcalf" />
+<meta itemprop="name" content="J Blair Metcalf" />
+<meta property="og:url" content="http://jblairmetcalf.com" />
+<meta itemprop="url" content="http://jblairmetcalf.com" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="J Blair Metcalf is a developer and UI/UX designer based in Seattle, WA, with experience in native iOS app development in Objective-C, front-end development, and responsive design and development. I have a passion for beautiful craft and clear communication. Formerly the co-founder of PillowMob and UI development for Halo 4." />
+<meta itemprop="description" content="J Blair Metcalf is a developer and UI/UX designer based in Seattle, WA, with experience in native iOS app development in Objective-C, front-end development, and responsive design and development. I have a passion for beautiful craft and clear communication. Formerly the co-founder of PillowMob and UI development for Halo 4." />
+<meta itemprop="description" content="J Blair Metcalf is a developer and UI/UX designer based in Seattle, WA, with experience in native iOS app development in Objective-C, front-end development, and responsive design and development. I have a passion for beautiful craft and clear communication. Formerly the co-founder of PillowMob and UI development for Halo 4." />
+<meta name="keywords" content="seattle, iOS developer, front-end developer, UI designer, UX designer, user experience designer, flash, jquery, css, html, php" />
+<meta property="og:image" content="http://jblairmetcalf.com/_resources/images/common/thumbnail.jpg" />
+<meta itemprop="thumbnailUrl" content="http://jblairmetcalf.com/_resources/images/common/thumbnail.jpg"/>
+<link rel="image_src" href="http://jblairmetcalf.com/_resources/images/common/thumbnail.jpg" />
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<meta name="geo.region" content="US-WA" />
+<meta name="geo.placename" content="Seattle" />
+<meta name="geo.position" content="47.60621;-122.332071" />
+<meta name="ICBM" content="47.60621, -122.332071" />
+<link href="_resources/css/reset.css" rel="stylesheet" />
+<link href="_resources/css/fonts.css" rel="stylesheet" />
+<link href="_resources/css/layout.css" rel="stylesheet" />
+<script src="_resources/js/jquery-2.1.1.min.js"></script>
+<script src="_resources/js/jquery.easing.1.3.js"></script>
+<script src="_resources/js/jquery.ba-hashchange.min.js"></script>
+<script src="_resources/js/jquery.lazyload.min.js"></script>
+<script src="_resources/js/layout.js"></script>
+<script>
+var delayLoad = 50;
+var durationPage = 500;
+var durationHover = 200;
+var durationInterval = 500;
+var durationFadeBetween = 250;
+var durationDirectionVisible = 300;
+var durationDirectionInvisible = 150;
+var durationHero = 1000;
+var durationHeroElement = 300;
+var easeHero = "easeInOutSine";
+var easeDirectionVisible = "easeOutBack";
+var easeDirectionInvisible = "easeInSine";
+var easeScroll = "easeInOutSine";
+var intervalHero = 5000;
+var intervalHeroElement = 200;
+var nonProjectPageIds = ["home", "work", "about"];
+var navigationToggles = ["work", "about"];
+var files = ["_resources/fonts/j-blair-metcalf-heading.eot", "_resources/fonts/j-blair-metcalf-heading.svg", "_resources/fonts/j-blair-metcalf-heading.ttf", "_resources/fonts/j-blair-metcalf-heading.woff", 
+			"_resources/fonts/j-blair-metcalf-subheading.eot", "_resources/fonts/j-blair-metcalf-subheading.svg", "_resources/fonts/j-blair-metcalf-subheading.ttf", "_resources/fonts/j-blair-metcalf-subheading.woff", 
+			"_resources/fonts/j-blair-metcalf-text.eot", "_resources/fonts/j-blair-metcalf-text.svg", "_resources/fonts/j-blair-metcalf-text.ttf", "_resources/fonts/j-blair-metcalf-text.woff", 
+			"_resources/images/common/external-over.png", "_resources/images/common/external-up.png", 
+			"_resources/images/common/loading-about-clients.gif", "_resources/images/common/loading-about-extra.gif", "_resources/images/common/loading-about-portrait.gif", 
+			"_resources/images/common/loading-home-clients-horizontal.gif", "_resources/images/common/loading-home-clients-projects.gif", "_resources/images/common/loading-home-clients-vertical.gif", 
+			"_resources/images/common/loading-home-skills-process.gif", "_resources/images/common/loading-section.gif", "_resources/images/common/loading-work.gif", 
+			"_resources/images/common/logo-over.png", "_resources/images/common/logo-up.png", 
+			"_resources/images/common/navigation-back-over.png", "_resources/images/common/navigation-back-up.png", 
+			"_resources/images/common/navigation-next-over.png", "_resources/images/common/navigation-next-up.png", 
+			"_resources/images/common/navigation-previous-over.png", "_resources/images/common/navigation-previous-up.png", 
+			"_resources/images/common/navigation-top-over.png", "_resources/images/common/navigation-top-up.png", 
+			"_resources/images/common/pill-large-over.png", "_resources/images/common/pill-large-up.png", 
+			"_resources/images/common/pill-small-over.png", "_resources/images/common/pill-small-up.png", 
+			"_resources/images/common/view-over.png", "_resources/images/common/view-up.png"];
+var limitTop = 75;
+</script>
+</head>
+<body>
+	<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(["_setAccount", "UA-2920896-2"]);
+	_gaq.push(["_trackPageview"]);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	function customGoToPage(id) {
+		var url = "#/"+id;
+		if (id == "home") {
+			url = "#/";
+		}
+		// _gaq_trackEvent("page", url);
+	}
+	</script>
+	<div class="width">
+		<header>
+			<a href="#/" class="logo fade">
+				<img src="_resources/images/common/logo-over.png" class="over">
+				<img src="_resources/images/common/logo-up.png" class="up">
+			</a>
+			<nav>
+				<ul>
+					<li class="toggle" id="work">
+						<a href="#">Work</a>
+						<span>Work</span>
+					</li>
+					<li class="toggle" id="about">
+						<a href="#">About</a>
+						<span>About</span>
+					</li>
+					<li>
+						<a href="_resources/pdf/j-blair-metcalf-resume.pdf" target="_blank">Resume</a>
+					</li>
+					<li>
+						<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!">Contact</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="page home" id="home">
+		<div class="hero">
+			<div class="parallax">
+				<div class="item" style="background: #cec7db url(_resources/images/home/hero-countonit.jpg) no-repeat bottom center;">
+					<div class="width">
+						<div class="heading">
+							<h1>Native iOS Apps</h1>
+							<h2>From Design<br/>
+								to Build</h2>
+							<a href="#/countonit" class="pill fade">View Project</a>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background: #333d40 url(_resources/images/home/hero-halo-4.jpg) no-repeat bottom center;">
+					<div class="width">
+						<div class="heading">
+							<h1>Halo 4</h1>
+							<h2>UI Developer<br/>
+								Menus &amp; Boards</h2>
+							<a href="#/halo-4" class="pill fade">View Project</a>
+						</div>
+					</div>
+				</div>
+				<div class="item" style="background: #acb9bc url(_resources/images/home/hero-pillowmob.jpg) no-repeat bottom center;">
+					<div class="width">
+						<div class="heading">
+							<h1>E-Commerce</h1>
+							<h2>From Idea<br/>
+								to Market</h2>
+							<a href="#/pillowmob" class="pill fade">View Project</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="width">
+			<div class="introduction">
+				<h3>Seattle Developer <span class="normal">and Designer</span></h3>
+				<p>With over a decade of UI development, UX design, and <span style="white-space:pre;">e-commerce</span> experience for individuals and corporations, I would love to take what I have learned and help you and your team on your next project.</p>
+			</div>
+			<div class="skills">
+				<div class="item">
+					<h4>iOS Development</h4>
+					<p>Obj-C, iOS 7 Libs, &amp; CocoaPods</p>
+					<img class="lazy" src="_resources/images/common/loading-home-skills-process.gif" data-original="_resources/images/home/skills-ios-development.png">
+				</div>
+				<div class="item">
+					<h4>Front-End Dev<span class="shorten">elopment</span></h4>
+					<p>HTML, CSS, jQuery, PHP, &amp; RWD</p>
+					<img class="lazy" src="_resources/images/common/loading-home-skills-process.gif" data-original="_resources/images/home/skills-front-end-development.png">
+				</div>
+				<div class="item">
+					<h4>UI/UX Design</h4>
+					<p>Wireframes, IA, &amp; Prototyping</p>
+					<img class="lazy" src="_resources/images/common/loading-home-skills-process.gif" data-original="_resources/images/home/skills-ui-ux-design.png">
+				</div>
+			</div>
+			<div class="clients">
+				<h4>Clients <span class="shorten">&amp; Projects <span class="normal">Per Year</span></span></h4>
+				<p>90 Projects, 55 Clients, 17 Agencies, 11 Years</p>
+				<div class="projects">
+					<img class="lazy" src="_resources/images/common/loading-home-clients-projects.gif" data-original="_resources/images/home/clients-projects.png">
+				</div>
+				<div class="horizontal">
+					<img class="lazy" src="_resources/images/common/loading-home-clients-horizontal.gif" data-original="_resources/images/home/clients-horizontal.png">
+				</div>
+				<div class="vertical">
+					<img class="lazy" src="_resources/images/common/loading-home-clients-vertical.gif" data-original="_resources/images/home/clients-vertical.png">
+				</div>
+			</div>
+			<div class="process">
+				<h4>How I Work</h4>
+				<div class="item">
+					<img class="lazy" src="_resources/images/common/loading-home-skills-process.gif" data-original="_resources/images/home/process-research.png">
+					<h9>Research</h9>
+					<p>Listen, collaborate, and prioritize.</p>
+				</div>
+				<div class="item">
+					<img class="lazy" src="_resources/images/common/loading-home-skills-process.gif" data-original="_resources/images/home/process-design-build.png">
+					<h9>Design &amp; Build</h9>
+					<p>Think, sketch, and shape.</p>
+				</div>
+				<div class="item">
+					<img class="lazy" src="_resources/images/common/loading-home-skills-process.gif" data-original="_resources/images/home/process-test-iterate.png">
+					<h9>Deliver</h9>
+					<p>Iterate, polish, and publish.</p>
+				</div>
+			</div>
+			<div class="pills">
+				<a href="#/work" class="pill fade">View My Work</a>
+				<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+			</div>
+		</div>
+	</div>
+	<div class="width">
+		<div class="page work" id="work">
+			<h5>Work</h5>
+			<p class="copy">Work spans from design to development for clients including Microsoft, McDonalds, and <a href="#/cadillac">Cadillac</a>. Formerly the co-founder of <a href="#/pillowmob">PillowMob</a> and UI developer for <a href="#/cadillac">Halo 4</a>.</p>
+			<div class="grid">
+				<div class="item">
+					<a href="#/countonit">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/countonit.png">
+						<h4>CountOnIt</h4>
+					</a>
+					<p>iOS Development &amp; UI/UX Design</p>
+				</div>
+				<div class="item">
+					<a href="#/halo-4">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/halo-4.png">
+						<h4>Halo 4</h4>
+					</a>
+					<p>UI Development</p>
+				</div>
+				<div class="item">
+					<a href="#/pillowmob">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/pillowmob.png">
+						<h4>PillowMob</h4>
+					</a>
+					<p>UI/UX Design &amp; Front-End Dev</p>
+				</div>
+				<div class="item">
+					<a href="#/cadillac">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/cadillac.png">
+						<h4>Cadillac</h4>
+					</a>
+					<p>Flash, ActionScript, &amp; Animation</p>
+				</div>
+				<div class="item">
+					<a href="#/popmask">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/popmask.png">
+						<h4>PopMask</h4>
+					</a>
+					<p>UI/UX Design &amp; PHP</p>
+				</div>
+				<div class="item">
+					<a href="#/health-counselor">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/health-counselor.png">
+						<h4>Health Counselor</h4>
+					</a>
+					<p>Design, HTML, CSS, &amp; PHP</p>
+				</div>
+				<div class="item">
+					<a href="#/craftsman">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/craftsman.png">
+						<h4>Craftsman</h4>
+					</a>
+					<p>Flash, ActionScript, &amp; Animation</p>
+				</div>
+				<div class="item">
+					<a href="#/illustration">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/illustration.png">
+						<h4>Illustration</h4>
+					</a>
+					<p>Illustration, Design, &amp; Identity</p>
+				</div>
+				<div class="item">
+					<a href="#/centurylink">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/centurylink.png">
+						<h4>CenturyLink</h4>
+					</a>
+					<p>UX Design &amp; Illustration</p>
+				</div>
+				<div class="item">
+					<a href="#/photography">
+						<img class="lazy" src="_resources/images/common/loading-work.gif" data-original="_resources/images/work/photography.png">
+						<h4>Photography</h4>
+					</a>
+					<p>Travel &amp; Product Shots</p>
+				</div>
+			</div>
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page about width" id="about">
+			<div class="left">
+				<h5>J Blair Metcalf</h5>
+				<p>I design and develop user interfaces with a passion for beautiful craft and clear communication that benefits the user.</p>
+				<p>After a decade of advertising industry design and development experience I <span style="white-space:pre;">co-founded</span>, designed, and developed <a href="#/pillowmob">PillowMob</a>, an <span style="white-space:pre;">e-commerce</span> website, then went on to develop the menus and scoreboards for <a href="#/halo-4">Halo 4</a>.</p>
+				<p>In my free time you can find me picnicking with my wife and son, scootering through the Pacific Northwest, listening to African Blues, watching a French New Wave, or thinking about the future in a foreign land.</p>
+				<h5>Skills</h5>
+				<p>
+					<ul>
+						<li>iOS 7 Libraries, Objective-C, &amp; CocoaPods</li>
+						<li>HTML, CSS, jQuery, PHP, RWD, &amp; WordPress</li>
+						<li>UI/UX Design, Wireframes, IA, &amp; Prototyping</li>
+						<li>Flash &amp; ActionScript</li>
+						<li>Identity &amp; Branding</li>
+						<li>SEO</li>
+						<li>Photography</li>
+					</ul>
+				</p>
+				<h5>Recognition</h5>
+				<p>My works and products have been seen and heard on: <a href="http://www.today.com/id/26184891/vp/45523926#45523926" target="_blank">Today Show, <a href="http://fab.com" target="_blank">Fab</a>, <a href="http://gadget.wired.it/news/accessori/2011/12/30/cuscino-pillowmob.html" target="_blank">Wired</a>, the <a href="http://www.howstuffworks.com/hsw-podcast.htm" target="_blank">How Stuff Works podcast</a>, <a href="http://www.gizmodo.jp/2012/06/120523roomie_pillowmob.html" target="_blank">Gizmodo</a>, <a href="http://www.cracked.com/article_19551_5-new-products-aimed-directly-at-worst-people-you-know.html" target="_blank">Cracked</a>, <a href="http://www.incrediblethings.com/home/making-out-with-your-pillow-just-got-hotter/" target="_blank">Incredible Things</a>, <a href="http://www.king5.com/on-tv/evening-magazine/Pillow-Face-151139895.html" target="_blank">Evening Magazine</a>, and <a href="http://www.king5.com/new-day-northwest/Pillow-Mob-144232995.html" target="_blank">New Day Northwest</a>.</p>
+				<h5>Clients</h5>
+				<img class="lazy" src="_resources/images/common/loading-about-clients.gif" data-original="_resources/images/about/clients.png">
+			</div>
+			<div class="right">
+				<img class="lazy portrait" src="_resources/images/common/loading-about-portrait.gif" data-original="_resources/images/about/j-blair-metcalf.png">
+				<h6>Extras</h6>
+				<p>Feel free to <a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!">email</a> me, look through my work history on <a href="http://www.linkedin.com/in/jblairmetcalf" target="_blank">LinkedIn</a>, take a peek at my code on <a href="https://github.com/jblairmetcalf" target="_blank">GitHub</a>, <!--my design work on <a href="https://www.behance.net/jblairmetcalf" target="_blank">Behance</a>, -->or see how I see the world on <a href="http://instagram.com/metallic_barf" target="_blank">Instagram</a>.</p>
+				<p>
+					<ul>
+						<li>
+							<a href="https://www.linkedin.com/in/jblairmetcalf" target="_blank" class="fade">
+								<img class="lazy external over" src="_resources/images/common/loading-about-extra.gif" data-original="_resources/images/about/linkedin-over.png">
+								<img class="lazy external up" src="_resources/images/common/loading-about-extra.gif" data-original="_resources/images/about/linkedin-up.png">
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/jblairmetcalf" target="_blank" class="fade">
+								<img class="lazy external over" src="_resources/images/common/loading-about-extra.gif" data-original="_resources/images/about/github-over.png">
+								<img class="lazy external up" src="_resources/images/common/loading-about-extra.gif" data-original="_resources/images/about/github-up.png">
+							</a>
+						</li>
+						<li>
+							<a href="http://instagram.com/metallic_barf" target="_blank" class="fade">
+								<img class="lazy external over" src="_resources/images/common/loading-about-extra.gif" data-original="_resources/images/about/instagram-over.png">
+								<img class="lazy external up" src="_resources/images/common/loading-about-extra.gif" data-original="_resources/images/about/instagram-up.png">
+							</a>
+						</li>
+					</ul>
+				</p>
+			</div>
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="countonit">
+			<h5>CountOnIt</h5>
+			<h7>Designer &amp; Developer <span class="normal">(2012-Present)</span></h7>
+			<h8>iOS Development, Objective-C, UI/UX Design</h8>
+			<p>Designed and developed a native iOS freemium app that helps users track and count goals and habits then export colorful charts. The UI is intuitive to navigate, create, and edit using gestures allowing for a clean and beautiful interface with no clutter. A helpful guide gently teaches the user how use the app without being obnoxious. Feel free to <a href="https://github.com/jblairmetcalf/CountOnIt" target="_blank">download the project from GitHub</a> and review how I develop.</p>
+			<a href="https://itunes.apple.com/us/app/countonit-track-chart-your/id846674201" class="external fade" target="_blank">View Project</a>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/countonit/iphones.jpg">
+			<div class="video"><iframe src="http://player.vimeo.com/video/90043056?badge=0&loop=0&title=0&color=ff2956" width="500" height="888" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/countonit/screens.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/countonit/app-store.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/countonit/chart.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/countonit/storyboard.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/countonit/sketches.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="halo-4">
+			<h5>Halo 4</h5>
+			<h7>Microsoft Studios - 343 Industries <span class="normal">(2012)</span></h7>
+			<h8>UI Development</h8>
+			<p>Worked alongside UI and motion designers and shader programers to implement menus, scoreboards, in-game markers, and HUD for Halo 4 using Microsoft’s proprietary SDK meeting a deadline for marketing a holiday launch. Created, maintained, updated, and tested UI templates used throughout the game.</p>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/halo-4/halo-4.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/halo-4/infinity.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/halo-4/forge-setup.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/halo-4/four-player.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/halo-4/forge.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/halo-4/hud-0.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/halo-4/hud-1.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/halo-4/hud-2.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="pillowmob">
+			<h5>PillowMob</h5>
+			<h7>Co-Founder <span class="normal">(2011-14)</span></h7>
+			<h8>UI/UX Design, Front-End Development, Identity, Flash, ActionScript, &amp; Photography</h8>
+			<p>Worked with my business partner to conceive and develop a low-cost online marketing campaign for a new product by using a grass-roots approach landing us a spot on <a href="http://www.today.com/id/26184891/vp/45523926#45523926" target="_blank">NBC's Today Show</a> boosting our 2011 holiday sales with an 11% conversion rate and expanding our staff from 1 to 22 employees. In our second year we grew by 25% as we expanded our marketing connections and increased customer retention.</p>
+			<a href="http://pillowmob.com" class="external fade" target="_blank">View Project</a>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/home.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/make-your-own.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/make-your-own-sketch.jpg">
+			<div class="video"><iframe width="560" height="315" src="http://www.youtube.com/embed/PsfZqJ7mnW0" frameborder="0" allowfullscreen></iframe></div>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/today-show.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/couple-couch.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/photography-sketch.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/seattle-magazine.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/recognition.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/pillowmob/press.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="cadillac">
+			<h5>Cadillac</h5>
+			<h7>Arc Worldwide/Leo Burnett <span class="normal">(2005-06)</span></h7>
+			<h8>Flash, ActionScript, &amp; Animation</h8>
+			<p>Lead the development team for Cadillac's website, and Escalade, V-Series, and Team Cadillac campaigns. Responsible for managing cross-disciplinary teams who conceived, designed, and developed to meet deadlines for new product releases and Super Bowl advertising.</p>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/cadillac/cadillac-com-home.jpg">
+			<div class="video"><iframe src="http://player.vimeo.com/video/95459258?badge=0&loop=0&title=0&color=ff2956" width="500" height="888" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/cadillac/team-cadillac-home.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/cadillac/team-cadillac-technology.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/cadillac/cadillac-escalade-home.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/cadillac/cadillac-escalade-gallery.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/cadillac/v-series-verhicles.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/cadillac/v-series-pgr3.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="popmask">
+			<h5>PopMask</h5>
+			<h7>Designer, Developer, &amp; Photographer <span class="normal">(2012)</span></h7>
+			<h8>UI/UX Design, PHP, Identity, &amp; Photography</h8>
+			<p>Following the success of <a href="#/pillowmob">PillowMob</a> and reimplementing it's strategy, code-base, and connections, my business partner and I created a new mass produced custom product that allows everyone to be anyone. After the user uploads their photo, a PHP ImageMagick script stretches it into the correct proportions and overlays the pattern so we could print and fulfill their order.</p>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/popmask/home.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/popmask/process.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/popmask/make-your-own.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/popmask/sketches.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/popmask/gender.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/popmask/checkout-press.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/popmask/jaw.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="health-counselor">
+			<h5>Health Counselor</h5>
+			<h7>Design &amp; Developer <span class="normal">(2011)</span></h7>
+			<h8>UI/UX Design, Front-End Development, PHP, Identity, &amp; SEO</h8>
+			<p>Worked with a small business owner to design their identity and brand in order to develop a low-cost website and blog using WordPress. After development, the site was optimized in order to draw more clients with better SEO.</p>
+			<a href="http://seattlehealthcounselor.com" class="external fade" target="_blank">View Project</a>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/seattle-health-counselor/home.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/seattle-health-counselor/services.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/seattle-health-counselor/screens.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="craftsman">
+			<h5>Craftsman</h5>
+			<h7>Designkitchen <span class="normal">(2009-10)</span></h7>
+			<h8>Flash, ActionScript, &amp; Animation</h8>
+			<p>Working offsite in Seattle with designers in Chicago, I developed Flash experiences for Craftsman's home page and a Gift Finder for a holiday campaign. Projects required branded animations and a complex GUI with dynamic content to be delivered on-time for campaign deadlines.</p>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/craftsman/gift-finder-home.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/craftsman/gift-finder-landing.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/craftsman/gift-finder-kitchen.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/craftsman/gift-finder-gift-showcase.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/craftsman/craftsman-com-home.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/craftsman/craftsman-com-landing.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/craftsman/craftsman-com-carousel.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="illustration">
+			<h5>Illustration</h5>
+			<p>Illustrations for band posters and the identity discovery process for small business logos.</p>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/logos-illustration/detholz.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/logos-illustration/seattle-health-counselor.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/logos-illustration/popmask.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/logos-illustration/popmask-sketch.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/logos-illustration/panda-chinese-family-daycare.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/logos-illustration/panda-chinese-family-daycare-sketch.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/logos-illustration/pillowmob.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="centurylink">
+			<h5>CenturyLink</h5>
+			<h7>Senior UX Designer <span class="normal">(2013)</span></h7>
+			<h8>UX Design, Illustration</h8>
+			<p>Worked closely with Centurylink's stakeholders to strategize revenue goals and increase user conversion rates. Presented research, competitive analysis, best practices, and expert evaluation of existing user experiences.</p>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/centurylink/home.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/centurylink/wireframes.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/centurylink/information-architecture.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/centurylink/mastheads.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+		<div class="page section" id="photography">
+			<h5>Photography</h5>
+			<p>Shooting as a hobbyist I have refined composition and lighting skills to know what I want and how to capture a product shot or a knockout to grab the viewer's attention.</p>
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/cholitas.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/alladin-sane.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/products.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/la-paz.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/animals.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/mount-santis.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/color.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/black-and-white-paths.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/black-and-white.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/mount-baker.jpg">
+			<img class="lazy" src="_resources/images/common/loading-section.gif" data-original="_resources/images/photography/reflection.jpg">
+			<a href="mailto:me@jblairmetcalf.com?subject=Hello,%20Blair!" class="pill fade">Contact Me</a>
+		</div>
+	</div>
+	<div class="footer">
+		&copy; 2014 J Blair Metcalf, All rights reserved.
+	</div>
+	<div class="navigation">
+		<a href="#" class="direction back fade">
+			<img src="_resources/images/common/navigation-back-over.png" class="over">
+			<img src="_resources/images/common/navigation-back-up.png" class="up">
+		</a>
+		<a href="#" class="direction top fade">
+			<img src="_resources/images/common/navigation-top-over.png" class="over">
+			<img src="_resources/images/common/navigation-top-up.png" class="up">
+		</a>
+		<a href="#" class="direction previous fade">
+			<img src="_resources/images/common/navigation-previous-over.png" class="over">
+			<img src="_resources/images/common/navigation-previous-up.png" class="up">
+		</a>
+		<a href="#" class="direction next fade">
+			<img src="_resources/images/common/navigation-next-over.png" class="over">
+			<img src="_resources/images/common/navigation-next-up.png" class="up">
+		</a>
+	</div>
+</body>
+</html>
